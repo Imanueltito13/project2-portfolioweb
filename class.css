@@ -117,7 +117,7 @@ box-shadow: 2px 2px 12px rgba(0,0,0,0,2);
 display: flex;
 margin: -7% auto 20px auto;
 position: relative;
-justify-content: space-between;
+justify-content: space-evenly;
 align-items: center;
 }
 .about-container img {
@@ -172,7 +172,7 @@ background-color: #262525;
 .service-text p:nth-child(2){
 	font-family: calibri;
 	font-weight: bold;
-	font-size: 15;
+	font-size: 15px;
 	line-height: 5px;
 	color: #3e3d3d;
 }
@@ -189,7 +189,7 @@ background-color: #262525;
 	height: 320px;
 	background-repeat: no-repeat;
 	background-size: cover;
-	box-shadow: 2px 2px 12px rgba(0,0,0,0,3);
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
 	flex-direction: column;
 	display: flex;
 	justify-content: center;
@@ -227,7 +227,7 @@ background-color: #262525;
 .box-2 p:nth-child(2),
 .box-3 p:nth-child(2) {
 	font-family: calibri;
-	color: #ffffff;
+	color: #FFFFFF;
 	line-height: 0px;
 	font-size: 23px;
 }
@@ -266,4 +266,101 @@ background-color: #262525;
 	font-size: 30px;
 	color: #ffffff;
 	border-bottom: 2px solid #ffffff;
+}
+.contact-me button {
+	height: 40px;
+	width: 200px;
+	color: #121211;
+	outline: none;
+	border: none;
+	font-size: 14px;
+	font-weight: bold;
+}
+footer {
+	display: flex;
+	height: 300px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+
+}
+
+footer p {
+	font-family: calibri;
+}
+footer p:nth-child(1){
+	font-size: 30px;
+	color: #191919;
+	font-weight: bold;
+	line-height: 10px;
+}
+footer p:nth-child(2) {
+	width: 600PX;
+	font-size: 16px;
+	color: #7e7d7d;
+	text-align: center;
+}
+.social-icons {
+	display: flex;
+}
+.social-icons a {
+	width: 40px;
+	height: 40px;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	margin: 20px 10px;
+	background-color: #e6e3e3;
+	border-radius: 50%;
+}
+.copyright {
+	left: 50%;
+	bottom: 10%;
+	color: #565555;
+	transform: translateX(-50%);
+	font-size: 13PX;
+	position: absolute;
+
+}
+.social-icons i{
+	color :#000000;
+}
+.social-icons a:hover ,
+.a-social-b a:hover {
+	background-color: #000000;
+	transition: width 0.5s;
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+
+}
+.social-icons a:hover i,
+.a-social-b a:hover i  {
+	color: #ffffff;
+	transition: all ease 0.5s;
+
+}
+
+.a-social-b {
+	position: fixed;
+	top: 50%;
+	right: 0px;
+	transform: translateY(-50%);
+}
+.a-social-b a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	padding: 0px;
+	margin: 0px;
+	line-height: 0px;
+	background-color: #FFFFFF;
+	border: 1px solid #cbcbcb;
+	box-shadow: 2px 2px 12px  rgba(0,0,0,0.2);
+
+}
+.a-social-b i {
+	font-size: 20px ;
+	color : #2b2b2b;
 }
